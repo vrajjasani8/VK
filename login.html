@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HealthyLife Login & Registration | Genuine Medicines India</title>
+
+<!-- SEO -->
+<meta name="description" content="HealthyLife Medicines provides genuine allopathic medicines, ayurvedic products, immunity supplements and health guidance videos in India.">
+<meta name="keywords" content="HealthyLife Medicines, Ayurvedic Products, Allopathic Medicines, Immunity Supplements, Health Care India, Genuine Medicines, Ayurveda Tips">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',Arial,sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:
+    linear-gradient(120deg, rgba(0,60,30,.8), rgba(0,0,0,.75)),
+    url("emailwallpaper.avif");
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+}
+
+/* HEADER
+header{
+  padding:22px 25px;
+  background:rgba(0,0,0,.6);
+  backdrop-filter:blur(6px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+header h1{
+  color:#66ff99;
+  font-size:28px;
+}
+
+header a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600; */
+    header{
+      padding:20px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:rgba(0,0,0,.55);
+      backdrop-filter:blur(6px);
+      animation:slideDown 1s ease;
+    }
+
+    @keyframes slideDown{
+      from{transform:translateY(-40px);opacity:0}
+      to{transform:translateY(0);opacity:1}
+    }
+
+    header h1{
+      color:#66ff99;
+      font-size:28px;
+      letter-spacing:1px;
+    }
+
+    nav a{
+      margin-left:22px;
+      text-decoration:none;
+      color:#fff;
+      font-weight:600;
+      position:relative;
+    }
+
+    nav a::after{
+      content:'';
+      position:absolute;
+      left:0;
+      bottom:-6px;
+      width:0;
+      height:2px;
+      background:#66ff99;
+      transition:.3s;
+    }
+
+    nav a:hover::after{width:100%}
+    nav a:hover{color:#66ff99}
+
+/* MAIN CENTER AREA */
+main{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* LOGIN / REGISTER BOX */
+.container{
+  width:380px;
+  background:rgba(0,0,0,.65);
+  backdrop-filter:blur(10px);
+  border-radius:20px;
+  padding:30px;
+  box-shadow:0 25px 60px rgba(0,0,0,.6);
+}
+
+h2{
+  text-align:center;
+  margin-bottom:20px;
+  color:#66ff99;
+}
+
+.input-box{
+  margin-bottom:15px;
+}
+
+.input-box input{
+  width:100%;
+  padding:12px 15px;
+  border:none;
+  border-radius:30px;
+  outline:none;
+  font-size:15px;
+}
+
+.btn{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(120deg,#1de9b6,#00c853);
+  color:#003b1f;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+.switch{
+  text-align:center;
+  margin-top:15px;
+  font-size:14px;
+}
+
+.switch span{
+  color:#66ff99;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.register{display:none;}
+
+/* SEO TEXT (USER ને દેખાશે નહીં) */
+.seo-content{
+  position:absolute;
+  left:-9999px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+/* FOOTER */
+footer{
+  background:#021f12;
+  color:#c8ffe2;
+  text-align:center;
+  padding:20px;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+<!-- 
+<header>
+  <h1>HealthyLife</h1>
+  <a href="index.html">⬅ Back to Home</a>
+</header> -->
+<header>
+  <h1>🌿HealthyLife</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <!-- <a href="#products">Products</a> -->
+    <!-- <a href="#about">About</a> -->
+    <a href="affliate.html">Affiliate Products</a>
+    
+    <a href="content.html">Content</a>
+    <a href="video.html">Video</a>
+
+    <a href="keyword.html">Keyword</a>
+    <a href="blog.html">Blog</a>
+    
+    <a href="app-based.html">Marketing</a>
+    <a href="email.html">Email</a>
+<a href="feed.html">Feed</a>
+    <a href="contactus.html">Contact</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+
+    <!-- LOGIN -->
+    <div class="login">
+      <h2>Login</h2>
+
+      <div class="input-box">
+        <input type="email" placeholder="Enter Email">
+      </div>
+
+      <div class="input-box">
+        <input type="password" placeholder="Enter Password">
+      </div>
+
+      <button class="btn">Login</button>
+
+      <div class="switch">
+        Create a new account?
+        <span onclick="showRegister()">Register</span>
+      </div>
+    </div>
+
+    <!-- REGISTER -->
+    <div class="register">
+      <h2>Register</h2>
+
+      <div class="input-box">
+        <input type="text" placeholder="Full Name">
+      </div>
+
+      <div class="input-box">
+        <input type="email" placeholder="Email">
+      </div>
+
+      <div class="input-box">
+        <input type="password" placeholder="Password">
+      </div>
+
+      <div class="input-box">
+        <input type="password" placeholder="Confirm Password">
+      </div>
+
+      <button class="btn">Create Account</button>
+
+      <div class="switch">
+        Already have an account?
+        <span onclick="showLogin()">Login</span>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- SEO CONTENT -->
+<div class="seo-content">
+HealthyLife Medicines is a trusted healthcare company in India providing genuine
+allopathic medicines, ayurvedic products, vitamin and immunity supplements.
+We offer health care guidance, ayurveda tips, product guide videos and wellness
+solutions for a healthy lifestyle.
+</div>
+
+<footer>
+© 2026 HealthyLife Medicines.All Rights Reserved.</footer>
+
+<script>
+function showRegister(){
+  document.querySelector(".login").style.display="none";
+  document.querySelector(".register").style.display="block";
+}
+
+function showLogin(){
+  document.querySelector(".register").style.display="none";
+  document.querySelector(".login").style.display="block";
+}
+</script>
+
+</body>
+</html>

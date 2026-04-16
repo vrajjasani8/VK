@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HealthyLife Premium</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',sans-serif;
+}
+
+body{
+  background:linear-gradient(rgba(0,50,30,0.85),rgba(0,0,0,0.9)),
+  url("emailwallpaper.avif");
+  background-size:cover;
+  background-attachment:fixed;
+  color:#fff;
+  overflow-x:hidden;
+}
+
+/* ===== HEADER ===== 
+
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:20px 50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+header h2{
+  color:#66ff99;
+  font-size:24px;
+}
+
+.back-btn{
+  text-decoration:none;
+  padding:8px 18px;
+  background:#66ff99;
+  color:#000;
+  border-radius:20px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.back-btn:hover{
+  background:#1de9b6;
+  transform:scale(1.05);
+}*/
+     /* HEADER */
+    header{
+      padding:20px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:rgba(0,0,0,.55);
+      backdrop-filter:blur(6px);
+      animation:slideDown 1s ease;
+    }
+
+    @keyframes slideDown{
+      from{transform:translateY(-40px);opacity:0}
+      to{transform:translateY(0);opacity:1}
+    }
+
+    header h1{
+      color:#66ff99;
+      font-size:28px;
+      letter-spacing:1px;
+    }
+
+    nav a{
+      margin-left:22px;
+      text-decoration:none;
+      color:#fff;
+      font-weight:600;
+      position:relative;
+    }
+
+    nav a::after{
+      content:'';
+      position:absolute;
+      left:0;
+      bottom:-6px;
+      width:0;
+      height:2px;
+      background:#66ff99;
+      transition:.3s;
+    }
+
+    nav a:hover::after{width:100%}
+    nav a:hover{color:#66ff99}
+
+
+/* ===== HERO SECTION ===== */
+
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  position:relative;
+  padding-top:80px;
+}
+
+.hero h1{
+  font-size:60px;
+  color:#66ff99;
+  animation:float 4s ease-in-out infinite;
+}
+
+.hero p{
+  margin-top:20px;
+  font-size:22px;
+  max-width:700px;
+  line-height:1.6;
+  opacity:0.9;
+}
+
+/* Floating Shapes */
+
+.circle{
+  position:absolute;
+  border-radius:50%;
+  background:rgba(102,255,153,0.15);
+  animation:float 6s ease-in-out infinite;
+}
+
+.circle1{
+  width:200px;
+  height:200px;
+  top:15%;
+  left:10%;
+}
+
+.circle2{
+  width:150px;
+  height:150px;
+  bottom:20%;
+  right:15%;
+  animation-delay:2s;
+}
+
+@keyframes float{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-20px);}
+  100%{transform:translateY(0);}
+}
+
+/* ===== CONTENT SECTION ===== */
+
+.section{
+  max-width:1100px;
+  margin:100px auto;
+  display:flex;
+  align-items:center;
+  gap:50px;
+  padding:50px;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(10px);
+  border-radius:25px;
+  opacity:0;
+  transform:translateY(60px);
+  transition:all 1s ease;
+}
+
+.section.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.section:nth-child(even){
+  flex-direction:row-reverse;
+}
+
+.section img{
+  width:50%;
+  border-radius:20px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.6);
+}
+
+.content{
+  width:50%;
+}
+
+.content h2{
+  color:#1de9b6;
+  margin-bottom:15px;
+  font-size:28px;
+}
+
+.content p{
+  line-height:1.8;
+  font-size:17px;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+  text-align:center;
+  padding:40px;
+  background:#021f12;
+  margin-top:80px;
+  font-size:15px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:900px){
+  .section{
+    flex-direction:column !important;
+  }
+  .section img,
+  .content{
+    width:100%;
+  }
+  .hero h1{
+    font-size:40px;
+  }
+  header{
+    padding:15px 20px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER 
+<header>
+  <h2>🌿 HealthyLife</h2>
+  <a href="index.html" class="back-btn">⬅ Back to Home</a>
+</header>-->
+<header>
+  <h1>🌿HealthyLife</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <!-- <a href="#products">Products</a> -->
+    <!-- <a href="#about">About</a> -->
+    <a href="affliate.html">Affiliate Products</a>
+    
+    <a href="content.html">Content</a>
+    <a href="video.html">Video</a>
+
+    <a href="keyword.html">Keyword</a>
+    <a href="blog.html">Blog</a>
+    
+    <a href="app-based.html">Marketing</a>
+    <a href="email.html">Email</a>
+<a href="feed.html">Feed</a>
+    <a href="contactus.html">Contact</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+<!-- HERO -->
+<div class="hero">
+  <div class="circle circle1"></div>
+  <div class="circle circle2"></div>
+  <h1>Premium Healthcare Experience</h1>
+  <p>
+    Genuine Medicines • Ayurveda • Modern Wellness Solutions  
+    Experience healthcare with trust, transparency and quality.
+  </p>
+</div>
+
+<!-- SECTION 1 -->
+<div class="section">
+  <img src="content1.png">
+  <div class="content">
+    <h2>🏥 Trusted Healthcare</h2>
+    <p>
+      HealthyLife provides certified and genuine medicines ensuring safety,
+      reliability and long-term wellness support for every individual.
+    </p>
+  </div>
+</div>
+
+<!-- SECTION 2 -->
+<div class="section">
+  <img src="content2.png">
+  <div class="content">
+    <h2>🌱 Ayurveda Meets Science</h2>
+    <p>
+      We blend ancient Ayurvedic wisdom with modern medical research
+      to deliver powerful and balanced healthcare solutions.
+    </p>
+  </div>
+</div>
+
+<!-- SECTION 3 -->
+<div class="section">
+  <img src="content3.png">
+  <div class="content">
+    <h2>💊 Genuine & Certified</h2>
+    <p>
+      Every product is tested and verified to ensure maximum safety.
+      No duplicates. No compromise. Only trusted healthcare.
+    </p>
+  </div>
+</div>
+
+<footer>
+© 2026 HealthyLife Medicines.All Rights Reserved.</footer>
+
+<script>
+const sections = document.querySelectorAll('.section');
+
+window.addEventListener('scroll', () => {
+  sections.forEach(section => {
+    const position = section.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.2;
+    if(position < screenPosition){
+      section.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>

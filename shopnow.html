@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthyLife Medicines</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+
+    body {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('https://images.unsplash.com/photo-1580281657521-6c6a7d6c7c6a');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.5);
+    }
+
+    header h1 { color: #4caf50; }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    nav a:hover { color: #4caf50; }
+
+    .hero {
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h2 { font-size: 48px; margin-bottom: 20px; }
+
+    .hero p { font-size: 20px; margin-bottom: 30px; }
+
+    .btn {
+      padding: 15px 30px;
+      background: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .btn:hover { background: #43a047; }
+
+    section {
+      padding: 60px 40px;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #4caf50;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 { margin-bottom: 10px; }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer p { font-size: 14px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>HealthyLife</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Trusted Medicines for Better Life</h2>
+  <p>Quality • Safety • Care</p>
+  <button class="btn">Shop Now</button>
+</div>
+
+<section id="products">
+  <h2 class="section-title">Our Products</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae" />
+      <h3>General Medicines</h3>
+      <p>Daily health care medicines.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67" />
+      <h3>Ayurvedic</h3>
+      <p>Natural & herbal solutions.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2" />
+      <h3>Vitamins</h3>
+      <p>Boost your immunity.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Us</h2>
+  <p style="max-width:800px;margin:auto;text-align:center;">
+    We provide trusted and certified medicines with the best quality. Our mission is to keep people healthy and happy.
+  </p>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact Us</h2>
+  <p style="text-align:center;">📞 +91 98765 43210 | 📧 info@healthylife.com</p>
+</section>
+
+<footer>
+  <p>© 2026 HealthyLife Medicines. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
+<!-- ================= SHOP PAGE (shop.html) ================= -->
+<!-- Save this as shop.html in same folder -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthyLife | Shop Medicines</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+    body{background:#f1f5f9}
+
+    header{
+      background:linear-gradient(120deg,#1b5e20,#4caf50);
+      color:#fff;
+      padding:40px 20px;
+      text-align:center;
+      animation:slideDown 1s ease;
+    }
+
+    header h1{font-size:42px;margin-bottom:10px}
+    header p{font-size:18px;opacity:.9}
+
+    @keyframes slideDown{from{transform:translateY(-40px);opacity:0}to{transform:translateY(0);opacity:1}}
+
+    .shop{
+      padding:60px 40px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:35px;
+    }
+
+    .product{
+      background:#fff;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 15px 30px rgba(0,0,0,.12);
+      transition:.4s ease;
+      animation:fadeUp .8s ease;
+    }
+
+    .product:hover{
+      transform:translateY(-12px) scale(1.02);
+      box-shadow:0 25px 45px rgba(0,0,0,.2);
+    }
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+
+    .product img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+    }
+
+    .content{padding:20px;text-align:center}
+
+    .content h3{font-size:22px;margin-bottom:8px}
+    .content p{font-size:14px;color:#555;margin-bottom:10px}
+
+    .price{
+      font-size:22px;
+      color:#2e7d32;
+      font-weight:bold;
+      margin-bottom:15px;
+    }
+
+    .btn{
+      padding:12px 28px;
+      border:none;
+      border-radius:30px;
+      background:linear-gradient(120deg,#2e7d32,#66bb6a);
+      color:#fff;
+      font-size:16px;
+      cursor:pointer;
+      transition:.3s ease;
+    }
+
+    .btn:hover{
+      background:linear-gradient(120deg,#1b5e20,#43a047);
+      transform:scale(1.05);
+    }
+
+    footer{
+      background:#111;
+      color:#fff;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Online Medicine Store</h1>
+  <p>100% Genuine Medicines • Fast Delivery • Best Price</p>
+</header>
+
+<section class="shop">
+
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae" />
+    <div class="content">
+      <h3>Paracetamol</h3>
+      <p>Fever & Pain Relief Tablets</p>
+      <div class="price">₹50</div>
+      <button class="btn" onclick="alert('Order received! We will contact you soon.')">Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67" />
+    <div class="content">
+      <h3>Ayurvedic Syrup</h3>
+      <p>Natural Immunity Booster</p>
+      <div class="price">₹180</div>
+      <button class="btn" onclick="alert('Order received! We will contact you soon.')">Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2" />
+    <div class="content">
+      <h3>Vitamin Capsules</h3>
+      <p>Daily Health Supplement</p>
+      <div class="price">₹220</div>
+      <button class="btn" onclick="alert('Order received! We will contact you soon.')">Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1631549916768-4118c7c2fdc4" />
+    <div class="content">
+      <h3>Cough Syrup</h3>
+      <p>Fast Relief from Cold & Cough</p>
+      <div class="price">₹130</div>
+      <button class="btn" onclick="alert('Order received! We will contact you soon.')">Buy Now</button>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 HealthyLife Medicines | Trusted Care</p>
+</footer>
+
+</body>
+</html>

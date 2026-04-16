@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HealthyLife | Weekly Content Calendar</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',sans-serif;
+}
+
+/* BACKGROUND IMAGE */
+body{
+  background:
+  linear-gradient(rgba(0,60,40,0.85), rgba(0,30,20,0.9)),
+  url("emailwallpaper.avif");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  color:white;
+}
+
+/* HEADER */
+header{
+  background:rgba(0,0,0,0.7);
+  padding:20px 50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  backdrop-filter:blur(8px);
+}
+
+header h1{
+  color:#00ff99;
+}
+
+header a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* TITLE */
+.title{
+  text-align:center;
+  padding:60px 20px 40px;
+}
+
+.title h2{
+  font-size:40px;
+  color:#00ff99;
+}
+
+/* GRID */
+.calendar-container{
+  max-width:1200px;
+  margin:auto;
+  padding:20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.day-card{
+  background:rgba(0,0,0,0.75);
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.6);
+  transition:.4s;
+}
+
+.day-card:hover{
+  transform:translateY(-8px) scale(1.03);
+}
+
+.day-card h3{
+  color:#1de9b6;
+  margin-bottom:10px;
+}
+
+.day-card p{
+  font-size:15px;
+  line-height:1.6;
+  opacity:.9;
+  margin-bottom:8px;
+}
+
+.cta{
+  margin-top:10px;
+  font-weight:bold;
+  color:#00ff99;
+}
+
+/* FOOTER */
+footer{
+  margin-top:60px;
+  text-align:center;
+  padding:20px;
+  background:rgba(0,0,0,0.7);
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  .title h2{
+    font-size:28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🌿HealthyLife</h1>
+  <a href="blog.html">⬅ Back
+  </a>
+</header>
+
+<div class="title">
+  <h2>📅 Weekly Content Calendar (Sunday - Saturday)</h2>
+</div>
+
+<div class="calendar-container">
+
+  <!-- SUNDAY -->
+  <div class="day-card">
+    <h3>🌿 Sunday – Ayurveda Awareness</h3>
+    <p>Explain benefits of Ayurveda in daily lifestyle.</p>
+    <p>Share natural healing techniques.</p>
+    <p>Introduce HealthyLife Ayurvedic range.</p>
+    <div class="cta">👉 Start Natural Healing</div>
+  </div>
+
+  <!-- MONDAY -->
+  <div class="day-card">
+    <h3>💊 Monday – Genuine Medicines</h3>
+    <p>Educate about certified & safe medicines.</p>
+    <p>Explain dangers of fake products.</p>
+    <p>Promote trusted HealthyLife quality.</p>
+    <div class="cta">💊 Choose Quality</div>
+  </div>
+
+  <!-- TUESDAY -->
+  <div class="day-card">
+    <h3>🧘 Tuesday – Immunity Boost Tips</h3>
+    <p>Share 5 immunity boosting habits.</p>
+    <p>Promote herbal supplements.</p>
+    <p>Encourage balanced diet & sleep.</p>
+    <div class="cta">💚 Boost Immunity</div>
+  </div>
+
+  <!-- WEDNESDAY -->
+  <div class="day-card">
+    <h3>🛒 Wednesday – Product Highlight</h3>
+    <p>Feature immunity booster supplement.</p>
+    <p>Explain ingredients & benefits.</p>
+    <p>Include offer or discount.</p>
+    <div class="cta">🔥 Order Now</div>
+  </div>
+
+  <!-- THURSDAY -->
+  <div class="day-card">
+    <h3>📖 Thursday – Educational Blog</h3>
+    <p>Discuss Ayurveda & Modern Medicine.</p>
+    <p>Explain safe integration benefits.</p>
+    <p>Guide readers with expert advice.</p>
+    <div class="cta">📚 Read Blog</div>
+  </div>
+
+  <!-- FRIDAY -->
+  <div class="day-card">
+    <h3>⭐ Friday – Customer Trust</h3>
+    <p>Share testimonials & reviews.</p>
+    <p>Highlight product quality.</p>
+    <p>Build brand credibility.</p>
+    <div class="cta">❤️ Trusted by Many</div>
+  </div>
+
+  <!-- SATURDAY -->
+  <div class="day-card">
+    <h3>📧 Saturday – Newsletter Promotion</h3>
+    <p>Promote weekly health newsletter.</p>
+    <p>Offer free tips & special discounts.</p>
+    <p>Encourage email subscription.</p>
+    <div class="cta">📩 Subscribe Now</div>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 HealthyLife | All Rights Reserved
+</footer>
+
+</body>
+</html>

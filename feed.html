@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HealthyLife | Social Feedback</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:
+linear-gradient(120deg, rgba(0,60,30,.85), rgba(0,0,0,.8)),
+url("emailwallpaper.avif");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:#fff;
+}
+
+/* HEADER
+header{
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.6);
+backdrop-filter:blur(6px);
+}
+
+header h1{
+color:#66ff99;
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:#fff;
+font-weight:600;
+}
+
+nav a:hover{
+color:#66ff99;
+} */
+  header{
+      padding:20px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:rgba(0,0,0,.55);
+      backdrop-filter:blur(6px);
+      animation:slideDown 1s ease;
+    }
+
+    @keyframes slideDown{
+      from{transform:translateY(-40px);opacity:0}
+      to{transform:translateY(0);opacity:1}
+    }
+
+    header h1{
+      color:#66ff99;
+      font-size:28px;
+      letter-spacing:1px;
+    }
+
+    nav a{
+      margin-left:22px;
+      text-decoration:none;
+      color:#fff;
+      font-weight:600;
+      position:relative;
+    }
+
+    nav a::after{
+      content:'';
+      position:absolute;
+      left:0;
+      bottom:-6px;
+      width:0;
+      height:2px;
+      background:#66ff99;
+      transition:.3s;
+    }
+
+    nav a:hover::after{width:100%}
+    nav a:hover{color:#66ff99}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:90px 20px 60px;
+}
+
+.hero h2{
+font-size:44px;
+margin-bottom:10px;
+}
+
+.hero p{
+opacity:.9;
+}
+
+/* FEEDBACK SECTION */
+.feedback-section{
+background:#f4fff9;
+color:#033d22;
+padding:80px 40px;
+}
+
+.feedback-container{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:35px;
+}
+
+/* CARD */
+.feedback-card{
+background:#fff;
+border-radius:20px;
+padding:30px;
+box-shadow:0 20px 40px rgba(0,0,0,.2);
+transition:.4s;
+text-align:center;
+}
+
+.feedback-card:hover{
+transform:translateY(-10px);
+box-shadow:0 30px 60px rgba(0,0,0,.3);
+}
+
+.feedback-card img{
+width:90px;
+height:90px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+}
+
+.stars{
+color:#ffc107;
+margin:10px 0;
+}
+
+/* ADD FEEDBACK FORM */
+.add-feedback{
+margin-top:80px;
+max-width:600px;
+margin-left:auto;
+margin-right:auto;
+background:#fff;
+padding:35px;
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+
+.add-feedback h3{
+margin-bottom:20px;
+color:#009e60;
+text-align:center;
+}
+
+.add-feedback input,
+.add-feedback textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:none;
+border-radius:10px;
+background:#f2f2f2;
+}
+
+.add-feedback textarea{
+height:100px;
+resize:none;
+}
+
+.add-feedback button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:30px;
+background:#009e60;
+color:#fff;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.add-feedback button:hover{
+background:#007a4a;
+transform:scale(1.05);
+}
+
+footer{
+background:#021f12;
+color:#c8ffe2;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:768px){
+.hero h2{
+font-size:30px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<!-- <header>
+<h1>🌿HealthyLife</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#">Blog</a>
+<a href="#">Contact</a>
+</nav>
+</header> -->
+<header>
+  <h1>🌿HealthyLife</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <!-- <a href="#products">Products</a> -->
+    <!-- <a href="#about">About</a> -->
+    <a href="affliate.html">Affiliate Products</a>
+    
+    <a href="content.html">Content</a>
+    <a href="video.html">Video</a>
+
+    <a href="keyword.html">Keyword</a>
+    <a href="blog.html">Blog</a>
+    
+    <a href="app-based.html">Marketing</a>
+    <a href="email.html">Email</a>
+<a href="feed.html">Feed</a>
+
+    <a href="contactus.html">Contact</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+<div class="hero">
+<h2>Our Social Feedback</h2>
+<p>See what our happy customers say about HealthyLife</p>
+</div>
+
+<section class="feedback-section">
+
+<div class="feedback-container">
+
+<div class="feedback-card">
+<img src="feed1.jpg">
+<h3>Priya Patel</h3>
+<div class="stars">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p>HealthyLife products are genuine and delivery was super fast. Highly recommended!</p>
+</div>
+
+<div class="feedback-card">
+<img src="feed2.jpg">
+<h3>Rahul Shah</h3>
+<div class="stars">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+</div>
+<p>Excellent customer support and quality medicines. I trust HealthyLife.</p>
+</div>
+
+<div class="feedback-card">
+<img src="feed3.jpg">
+<h3>Neha Mehta</h3>
+<div class="stars">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p>Very professional service. The Ayurveda products are amazing!</p>
+</div>
+
+</div>
+
+<!-- Add Feedback Form -->
+<div class="add-feedback">
+<h3>Add Your Feedback</h3>
+<form>
+<input type="text" placeholder="Your Name" required>
+<textarea placeholder="Write your feedback..." required></textarea>
+<button type="submit">Submit Feedback</button>
+</form>
+</div>
+
+</section>
+
+<footer>
+© 2026 HealthyLife Medicines.All Rights Reserved.</footer>
+
+</body>
+</html>

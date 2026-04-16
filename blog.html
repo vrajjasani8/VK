@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About HealthyLife Company | Blog</title>
+
+<meta name="description" content="HealthyLife is a trusted healthcare company providing genuine medicines, ayurvedic products, immunity supplements and wellness guidance.">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', Arial, sans-serif;
+}
+
+body{
+background:
+linear-gradient(120deg, rgba(0,60,30,.85), rgba(0,0,0,.8)),
+url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1800&q=80');
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:#fff;
+min-height:100vh;
+}
+
+/* HEADER 
+header{
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.55);
+backdrop-filter:blur(6px);
+}
+
+header h1{
+color:#66ff99;
+font-size:28px;
+}
+
+nav a{
+margin-left:22px;
+text-decoration:none;
+color:#fff;
+font-weight:600;
+}
+
+nav a:hover{
+color:#66ff99;
+}*/
+/* HEADER */
+    header{
+      padding:20px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:rgba(0,0,0,.55);
+      backdrop-filter:blur(6px);
+      animation:slideDown 1s ease;
+    }
+
+    @keyframes slideDown{
+      from{transform:translateY(-40px);opacity:0}
+      to{transform:translateY(0);opacity:1}
+    }
+
+    header h1{
+      color:#66ff99;
+      font-size:28px;
+      letter-spacing:1px;
+    }
+
+    nav a{
+      margin-left:22px;
+      text-decoration:none;
+      color:#fff;
+      font-weight:600;
+      position:relative;
+    }
+
+    nav a::after{
+      content:'';
+      position:absolute;
+      left:0;
+      bottom:-6px;
+      width:0;
+      height:2px;
+      background:#66ff99;
+      transition:.3s;
+    }
+
+    nav a:hover::after{width:100%}
+    nav a:hover{color:#66ff99}
+
+
+/* BLOG CONTAINER */
+.blog-container{
+max-width:900px;
+margin:60px auto;
+background:rgba(0,0,0,.65);
+backdrop-filter:blur(8px);
+padding:45px;
+border-radius:25px;
+box-shadow:0 30px 70px rgba(0,0,0,.7);
+}
+
+.blog-title{
+text-align:center;
+font-size:42px;
+color:#66ff99;
+margin-bottom:10px;
+}
+
+.blog-subtitle{
+text-align:center;
+font-size:18px;
+opacity:.9;
+margin-bottom:40px;
+}
+
+h2{
+color:#1de9b6;
+margin-top:35px;
+margin-bottom:12px;
+font-size:26px;
+}
+
+p{
+font-size:17px;
+line-height:1.8;
+margin-bottom:15px;
+}
+
+ul{
+margin:15px 0 15px 20px;
+}
+
+li{
+margin-bottom:10px;
+font-size:16px;
+}
+
+/* IMAGE STYLE */
+.blog-image{
+text-align:center;
+margin:30px 0;
+}
+
+.blog-image img{
+width:100%;
+max-height:400px;
+object-fit:cover;
+border-radius:20px;
+box-shadow:0 15px 40px rgba(0,0,0,.6);
+}
+
+/* BUTTON */
+.calendar-btn{
+display:inline-block;
+padding:14px 28px;
+background:#66ff99;
+color:#003322;
+font-size:16px;
+font-weight:bold;
+text-decoration:none;
+border-radius:30px;
+transition:.3s;
+margin-top:20px;
+}
+
+.calendar-btn:hover{
+background:#ffffff;
+transform:scale(1.05);
+}
+
+footer{
+background:#021f12;
+color:#c8ffe2;
+text-align:center;
+padding:25px;
+margin-top:60px;
+}
+
+@media(max-width:768px){
+.blog-container{
+margin:30px 15px;
+padding:30px 22px;
+}
+.blog-title{
+font-size:32px;
+}
+}
+</style>
+</head>
+
+<body>
+<!-- 
+<header>
+<h1>🌿HealthyLife</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#">Blog</a>
+<a href="#">Contact</a>
+</nav>
+</header> -->
+<header>
+  <h1>🌿HealthyLife</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <!-- <a href="#products">Products</a> -->
+    <!-- <a href="#about">About</a> -->
+    <a href="affliate.html">Affiliate Products</a>
+    
+    <a href="content.html">Content</a>
+    <a href="video.html">Video</a>
+
+    <a href="keyword.html">Keyword</a>
+    <a href="blog.html">Blog</a>
+    
+    <a href="app-based.html">Marketing</a>
+    <a href="email.html">Email</a>
+<a href="feed.html">Feed</a>
+    <a href="contactus.html">Contact</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<div class="blog-container">
+
+<h1 class="blog-title">🌿 About HealthyLife Company 🌿</h1>
+<p class="blog-subtitle">🏥 Genuine Medicines • 🌱 Ayurveda • 💪 Wellness Guidance</p>
+
+<!-- HERO IMAGE -->
+<div class="blog-image">
+<img src="Ayurvedic.jpg" alt="HealthyLife Healthcare">
+</div>
+
+<p>
+In today’s fast-paced lifestyle, <b>good health is the greatest wealth</b> 💚.
+HealthyLife is a trusted healthcare company dedicated to making genuine medicines,
+ayurvedic products, immunity supplements, and health guidance videos easily accessible
+to everyone 🩺✨
+</p>
+
+<ul>
+<li>✔️ Genuine Medicines</li>
+<li>✔️ Ayurvedic Products</li>
+<li>✔️ Immunity Supplements</li>
+<li>✔️ Health Guidance Videos</li>
+</ul>
+
+<h2>🎯 Our Mission at HealthyLife</h2>
+<p>
+The mission of HealthyLife is to provide <b>authentic, safe, and effective</b>
+healthcare solutions to every individual 💊🌿.
+</p>
+
+<h2>🌱 Ayurveda Meets Modern Science</h2>
+<p>
+At HealthyLife, we combine 🧘‍♂️ ancient Ayurvedic wisdom with 🔬 modern medical science.
+This powerful blend ensures safe, long-term, and effective health benefits 🌟.
+</p>
+
+<div class="blog-image">
+<img src="content2.png" alt="Ayurveda and Science">
+</div>
+
+<h2>❗ Why Genuine Medicines Matter</h2>
+<p>
+Duplicate and counterfeit medicines 🚫 can seriously harm your health.
+HealthyLife provides only certified, tested, and genuine medicines.
+</p>
+
+<div class="blog-image">
+<img src="General Medicines.jpg" alt="Genuine Medicines">
+</div>
+
+<div style="text-align:center;">
+<a href="calender.html" class="calendar-btn">
+📅 View 7 Days Content Calendar
+</a>
+</div>
+
+</div>
+
+<footer>
+© 2026 HealthyLife Medicines.All Rights Reserved.</footer>
+
+</body>
+</html>

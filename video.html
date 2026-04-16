@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthyLife | Video Gallery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+
+    body{
+      background:
+        linear-gradient(120deg, rgba(0,60,30,.8), rgba(0,0,0,.75)),
+        url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1800&q=80');
+      background-size:cover;
+      background-position:center;
+      background-attachment:fixed;
+      color:#fff;
+      min-height:100vh;
+    }
+/* 
+    header{
+      padding:30px 40px;
+      background:rgba(0,0,0,.55);
+      backdrop-filter:blur(6px);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h1{color:#66ff99;font-size:30px}
+    header a{color:#fff;text-decoration:none;font-weight:600} */
+     /* HEADER */
+    header{
+      padding:20px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:rgba(0,0,0,.55);
+      backdrop-filter:blur(6px);
+      animation:slideDown 1s ease;
+    }
+
+    @keyframes slideDown{
+      from{transform:translateY(-40px);opacity:0}
+      to{transform:translateY(0);opacity:1}
+    }
+
+    header h1{
+      color:#66ff99;
+      font-size:28px;
+      letter-spacing:1px;
+    }
+
+    nav a{
+      margin-left:22px;
+      text-decoration:none;
+      color:#fff;
+      font-weight:600;
+      position:relative;
+    }
+
+    nav a::after{
+      content:'';
+      position:absolute;
+      left:0;
+      bottom:-6px;
+      width:0;
+      height:2px;
+      background:#66ff99;
+      transition:.3s;
+    }
+
+    nav a:hover::after{width:100%}
+    nav a:hover{color:#66ff99}
+
+    .hero{
+      text-align:center;
+      padding:130px 20px 80px;
+      animation:fadeUp 1.2s ease;
+    }
+
+    .hero h2{font-size:52px;margin-bottom:20px}
+    .hero p{font-size:22px;opacity:.9;max-width:900px;margin:auto}
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+
+    section{
+      background:#f4fff9;
+      color:#033d22;
+      padding:80px 40px;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:40px;
+      margin-bottom:50px;
+      color:#009e60;
+    }
+
+    .videos{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:40px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .video-card{
+      background:#fff;
+      border-radius:22px;
+      overflow:hidden;
+      box-shadow:0 18px 35px rgba(0,0,0,.18);
+      transition:.45s ease;
+      text-align:center;
+      color:#000;
+    }
+
+    .video-card:hover{transform:translateY(-10px) scale(1.02); box-shadow:0 35px 60px rgba(0,0,0,.3);}
+    
+    .video-card iframe{
+      width:100%;
+      height:200px;
+      border:none;
+    }
+
+    .video-card h3{
+      font-size:22px;
+      margin:15px 0 10px;
+    }
+
+    .video-card p{
+      font-size:15px;
+      opacity:.85;
+      margin-bottom:15px;
+      padding:0 10px;
+    }
+
+    footer{
+      background:#021f12;
+      color:#c8ffe2;
+      text-align:center;
+      padding:25px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- <header>
+  <h1>HealthyLife</h1>
+  <a href="index.html">⬅ Back to Home</a>
+</header> -->
+
+<header>
+  <h1>🌿HealthyLife</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <!-- <a href="#products">Products</a> -->
+    <!-- <a href="#about">About</a> -->
+    <a href="affliate.html">Affiliate Products</a>
+    
+    <a href="content.html">Content</a>
+    <a href="video.html">Video</a>
+
+    <a href="keyword.html">Keyword</a>
+    <a href="blog.html">Blog</a>
+    
+    <a href="app-based.html">Marketing</a>
+    <a href="email.html">Email</a>
+<a href="feed.html">Feed</a>
+    <a href="contactus.html">Contact</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>HealthyLife Video Gallery</h2>
+  <p>Watch our health tips, tutorials, and product guides to stay healthy and informed.</p>
+</div>
+
+<section>
+  <h2 class="section-title">Featured Videos</h2>
+  <div class="videos">
+
+    <div class="video-card">
+      <iframe  src="Daily Health Tips.mp4" title="Daily Health Tips" allowfullscreen></iframe>
+      <!-- <source src="videos/healthy_tips.mp4" type="video/mp4"> -->
+
+      <h3>Daily Health Tips</h3>
+      <p>Simple ways to maintain a healthy lifestyle every day.</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src= "Product Guide.mp4"title="Product Guide" allowfullscreen></iframe>
+      <h3>Product Guide</h3>
+      <p>Learn about our top-selling supplements and their benefits.</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src= "Ayurveda Tips.mp4"title="Ayurveda Tips" allowfullscreen></iframe>
+      <h3>Ayurveda Tips</h3>
+      <p>Natural ways to boost immunity and wellness.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 HealthyLife Medicines.All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
